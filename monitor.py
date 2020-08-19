@@ -44,7 +44,7 @@ if args.estimate:
     if os.path.exists(args.estimate):
         feed = tc.data_feed.file_feed(args.estimate)
     else:
-        feed = tc.data_feed.stream_feed(args.estimate)
+        feed = tc.main2.detect_mask()
     print('Visualizing estimation result. Press Ctrl + C to stop.')
     visualizer = tm.visualizer.Visualizer()
     visualizer.run(feed)

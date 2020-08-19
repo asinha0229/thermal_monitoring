@@ -1,3 +1,2 @@
-.DS_Store
-*.pyc
-.idea/
+# created by virtualenv automatically
+*
